@@ -10,3 +10,10 @@
 7. Conditions            (Scripting and Concepts)
 8. Loops                 (Scripting and Concepts)
 9. SED Editor            (Command)
+
+
+1. Shebang:
+best method is <shell> <script>.
+# is used for comments
+If you want to print something we use "echo command".
+echo Hello world
