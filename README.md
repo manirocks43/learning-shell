@@ -25,3 +25,17 @@ echo Hello world
 > output is over ridden, using(>> append) the output content in desired location.
 >, 1> only output, 2> for error andd &> for both output and error.
 Ex: ls -ld /boot/ /boot1/ 1>/tmp/out 2>/tmp/err
+
+3. Exit Status
+0 = Successful
+1-255 = Not successful
+$? holds the exit status value, so use echo $?
+
+4. Variables (Constants):
+If we assign a name to a certain set of data, then its called a variable.
+In bash shell we declare Variables as Var=Data
+In bash shell we access variable as $VAR or ${VAR}
+VAR=$(command), this is a command substitution,cmd output will go to VAR.
+Example:DATE=$(date)  ;  Output: DATE=$(date)
+VAR=$((expression)), this is a arithematic susbtitution, expression output will go to variable.
+Example: VAR=$((2+3))  ; Value of 2+3 is $VAR
