@@ -1,1 +1,2 @@
-echo value of x = $x
+read -p 'Enter Name: ' name 
+echo Your name- $name

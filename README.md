@@ -39,3 +39,8 @@ VAR=$(command), this is a command substitution,cmd output will go to VAR.
 Example:DATE=$(date)  ;  Output: DATE=$(date)
 VAR=$((expression)), this is a arithematic susbtitution, expression output will go to variable.
 Example: VAR=$((2+3))  ; Value of 2+3 is $VAR
+
+5. Inputs[(During execution: Least used); (Before Execution: Frequently used)]
+   During execution: 
+read -p 'Enter Name: ' name 
+echo Your name- $name
