@@ -44,3 +44,12 @@ Example: VAR=$((2+3))  ; Value of 2+3 is $VAR
    During execution: 
 read -p 'Enter Name: ' name 
 echo Your name- $name
+
+## Special variables.sh??
+echo $0 - Script name
+echo $1 - 1st argument
+echo $2 - 2nd argument
+echo $@ - All arguments
+echo $* - All arguments
+echo $# - Number of Arguments
+
