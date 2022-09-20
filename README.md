@@ -53,3 +53,25 @@ echo $@ - All arguments
 echo $* - All arguments
 echo $# - Number of Arguments
 
+6. SED Editor (Stream line editor)
+a. Delete line
+b. Substitute a word
+c. Add a line
+## SED works in 2 ways:
+1. sed will not change the file and print change in the terminal, this is default SED behaviour.
+2. By using -i, we can edit the file rather than just printing.
+## Delete lines Examples:
+sed -i '/root/ d' /tmp/passwd
+sed -i -e '/root/ d' /tmp/passwd
+sed -i -e '/root/ d' -e '/nologin/ d' /tmp/passwd
+sed -i -e '1 d' /tmp/passwd
+## Substitute lines Examples:
+   sed -e 's/root/ROOT/' /tmp/passwd
+   sed -i -e 's/root/ROOT/' /tmp/passwd
+   sed -i -e 's/root/ROOT/gi' /tmp/passwd
+## Add lines Examples:
+sed -e '1 i Hello' /tmp/passwd
+sed -i -e '1 i Hello' /tmp/passwd (inside)
+sed -i -e '1 a Hello' /tmp/passwd (append)
+sed -i -e '1 c Hello' /tmp/passwd (change)
+sed -i -e '/shutdown/ c Hello' /tmp/passwd
