@@ -18,6 +18,22 @@ best method is <shell> <script>.
 If you want to print something we use "echo command".
 echo Hello world
 
+## Print colours:
+Syntax: echo -e "\e[COLmMESSAGE\e[0m"
+# EXAMPLE: echo -e "\e[31mHELLO\e[om"
+# \e[31m -> To enable colour code 31
+# \e[0m -> To disable the enabled colour code we use 0
+# -e -> Enable escape sequence, \e is one escape sequence
+# "" -> Quotes are mandatory if we use escape sequence
+## Colours and their codes:
+1. Red  -> 31
+2. Green -> 32
+3. Yellow -> 33
+4. Blue -> 34
+5. Maganta -> 35
+6. Cyan -> 36
+
+
 2. Redirectors
    (>,<) >Stdout) (<Stdin)
 > redirect output to select locatiom
