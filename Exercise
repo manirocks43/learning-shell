@@ -1,4 +1,11 @@
+function SAMPLE{} {
+    echo SAMPLE function
+ }
 
+SAMPLE1{} {
+    echo SAMPLE1 function
+ }
 
-
+ SAMPLE
+ SAMPLE1
 
