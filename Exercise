@@ -1,4 +1,4 @@
-function SAMPLE{} {
+function = SAMPLE{} {
     echo SAMPLE function
  }
 
