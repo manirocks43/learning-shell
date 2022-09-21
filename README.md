@@ -75,3 +75,32 @@ sed -i -e '1 i Hello' /tmp/passwd (inside)
 sed -i -e '1 a Hello' /tmp/passwd (append)
 sed -i -e '1 c Hello' /tmp/passwd (change)
 sed -i -e '/shutdown/ c Hello' /tmp/passwd
+
+## Conditions (case and if{majorly used}):
+1. Simple IF:
+if [expression]
+then 
+   command
+fi
+
+2.If else:
+if [expression]
+then 
+   command
+else 
+   command
+fi
+
+3. Else if:
+if [expression]
+then 
+   command1
+elif [expression2]
+then
+   command2
+elif [expression3]
+then 
+   command3
+else 
+   command4
+fi
