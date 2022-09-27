@@ -9,3 +9,14 @@ SAMPLE1{} {
  SAMPLE
  SAMPLE1
 
+# frontend 172.31.1.81
+# mysql 172.31.0.53
+# catalogue 172.31.7.130
+# user 172.31.3.55
+# cart 172.31.8.53
+# shipping 172.31.8.56
+# rabbitmq 172.31.0.167
+# payment 172.31.4.250
+# dispatch 172.31.10.41
+# redis 172.31.5.75
+# mongodb 172.31.2.26
